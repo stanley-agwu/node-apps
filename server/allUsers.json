@@ -1,0 +1,22 @@
+{
+    "userOne": {
+        "firstName": "Amy",
+        "lastName": "Klobachur",
+        "age": 27
+    },
+    "userTwo":{
+        "firstName": "Amy",
+        "lastName": "Klobachur",
+        "age": 27
+    },
+    "userThree":{
+        "firstName": "Amy",
+        "lastName": "Klobachur",
+        "age": 27
+    },
+    "userFour":{
+        "firstName": "Amy",
+        "lastName": "Klobachur",
+        "age": 27
+    }
+}
