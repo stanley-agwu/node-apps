@@ -1,5 +1,5 @@
-import React from 'react';
-import { useQuery, gql } from '@apollo/client';
+import React, { useState } from 'react';
+import { useQuery, useLazyQuery, gql } from '@apollo/client';
 import './App.css';
 
 const QUERY_ALL_USERS = gql`
@@ -25,11 +25,21 @@ const QUERY_ALL_MOVIES = gql`
     }
 `;
 
+const SEARCH_MOVIE_BY_NAME = gql`
+query GetMovieByName($name: String!) {
+  movie(name: $name) {
+    name
+    yearOfRelease
+  }
+}
+`;
+
 const DisplayData = () => {
+    const [movieSearched, setMovieSearched] = useState('');
+
     const { data: userData, loading: userLoading, error: userError } = useQuery(QUERY_ALL_USERS);
     const { data: movieData, loading: movieLoading, error: movieError } = useQuery(QUERY_ALL_MOVIES);
-    console.log(userData)
-    console.log(movieData)
+    const [ fetchMovie, { data: movieSearchedData, error: movieFetchedError} ] = useLazyQuery(SEARCH_MOVIE_BY_NAME);
     const usersList = userLoading ? <div>Loading users data ...</div> : 
         userError ? <div>Error : {userError}</div> :
         userData ? userData.users.map((user, index) => {
