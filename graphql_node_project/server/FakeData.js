@@ -359,6 +359,5 @@ const MoviesList = [
         isInCinemas: false
     }
 ]
-  
 
 module.exports = { UsersList, MoviesList };
