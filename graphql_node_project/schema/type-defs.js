@@ -6,11 +6,36 @@ const typeDefs = gql`
         name: String!
         username: String!
         age: Int!
-        nationality: String!
+        nationality: Nationality!
+        friends: [User]
     }
-
     type Query {
         users: [User!]! 
+        user(id: ID!): User
+        movies: [Movie!]!
+        movie(name: String): Movie
+    }
+
+    enum Nationality {
+        UNITED_STATES
+        UNITED_KINGDOM
+        ARGENTINA
+        CANADA 
+        NIGERIA
+        GHANA
+        GERMANY
+        POLAND
+        ANTIGUA
+        MEXICO
+        JAPAN
+        CHINA
+        INDIA
+        CAMEROON
+        BRAZIL
+        SPAIN
+        IRELAND
+        NORWAY
+        DENMARK
     }
 `;
 
