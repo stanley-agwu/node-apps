@@ -14,12 +14,25 @@ const QUERY_ALL_USERS = gql`
     }
 `;
 
+const QUERY_ALL_MOVIES = gql`
+    query GetAllMovies{
+        movies {
+            id
+            name
+            yearOfRelease
+            isInCinemas
+        }
+    }
+`;
+
 const DisplayData = () => {
-    const { data, loading, error } = useQuery(QUERY_ALL_USERS);
-    console.log(data)
-    const usersList = loading ? <div>Loading data ...</div> : 
-        error ? <div>Error : {error}</div> :
-        data ? data.users.map((user, index) => {
+    const { data: userData, loading: userLoading, error: userError } = useQuery(QUERY_ALL_USERS);
+    const { data: movieData, loading: movieLoading, error: movieError } = useQuery(QUERY_ALL_MOVIES);
+    console.log(userData)
+    console.log(movieData)
+    const usersList = userLoading ? <div>Loading users data ...</div> : 
+        userError ? <div>Error : {userError}</div> :
+        userData ? userData.users.map((user, index) => {
             return(
                 <div className='user' key={index}>
                     <div><span className='user-title'>Name: </span>{user.name}</div>
@@ -29,9 +42,25 @@ const DisplayData = () => {
                 </div>
                 )
             }) :
-        'There are no data to display';
+        'There are no users data to display';
+    const moviesList = movieLoading ? <div>Loading movies data ...</div> : 
+    movieError ? <div>Error : {movieError}</div> :
+    movieData ? movieData.movies.map((movie, index) => {
+        return(
+            <div className='user' key={index}>
+                <div><span className='user-title'>Movie Title: </span>{movie.name}</div>
+                <div><span className='user-title'>The Year of Release: </span>{movie.yearOfRelease}</div>
+                <div><span className='user-title'>Featured in Cinema: </span>{`${movie.isInCinemas}`}</div>
+            </div>
+            )
+        }) :
+    'There are no users data to display';
     return ( 
-        <div className='data'>{usersList}</div> 
+        <div className='container'>
+            <div className='data'>{usersList}</div>
+            <div className='data'>{moviesList}</div>
+        </div>
+         
         );
 }
  

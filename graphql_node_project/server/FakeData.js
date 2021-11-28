@@ -2,21 +2,21 @@ const UsersList = [
     {
         id: 1,
         name: 'Bruce',
-        username: 'Bruce',
+        username: 'Bruce@123',
         age: 22,
         nationality: 'CANADA',
         friends: [
             {
                 id: 3,
                 name: 'Bjorn',
-                username: 'Bjorn',
+                username: 'Bjorn@123',
                 age: 32,
                 nationality: 'NORWAY'
             },
             {
                 id: 8,
                 name: 'Anthony',
-                username: 'Anthony',
+                username: 'Anthony@123',
                 age: 36,
                 nationality: 'ARGENTINA'
             }
@@ -25,14 +25,14 @@ const UsersList = [
     {
         id: 2,
         name: 'James',
-        username: 'James',
+        username: 'James@123',
         age: 29,
         nationality: 'IRELAND',
         friends: [
             {
                 id: 7,
                 name: 'Ted',
-                username: 'Ted',
+                username: 'Ted@123',
                 age: 27,
                 nationality: 'UNITED_KINGDOM'
             }
@@ -41,14 +41,14 @@ const UsersList = [
     {
         id: 3,
         name: 'Bjorn',
-        username: 'Bjorn',
+        username: 'Bjorn@123',
         age: 32,
         nationality: 'NORWAY',
         friends: [
             {
                 id: 10,
                 name: 'Rita',
-                username: 'Rita',
+                username: 'Rita@123',
                 age: 21,
                 nationality: 'CAMEROON'
             },
@@ -64,14 +64,14 @@ const UsersList = [
     {
         id: 4,
         name: 'Cameron',
-        username: 'Cameron',
+        username: 'Cameron@123',
         age: 42,
         nationality: 'DENMARK',
         friends: [
             {
                 id: 6,
                 name: 'Julia',
-                username: 'Julia',
+                username: 'Julia@123',
                 age: 19,
                 nationality: 'POLAND'
             }
@@ -80,7 +80,7 @@ const UsersList = [
     {
         id: 5,
         name: 'Camilla',
-        username: 'Bruce',
+        username: 'Bruce@123',
         age: 18,
         nationality: 'UNITED_STATES',
         friends: [
@@ -96,21 +96,21 @@ const UsersList = [
     {
         id: 6,
         name: 'Julia',
-        username: 'Julia',
+        username: 'Julia@123',
         age: 19,
         nationality: 'POLAND',
         friends: [
             {
                 id: 9,
                 name: 'Jacob',
-                username: 'Jacob',
+                username: 'Jacob@123',
                 age: 26,
                 nationality: 'MEXICO'
             },
             {
                 id: 10,
                 name: 'Rita',
-                username: 'Rita',
+                username: 'Rita@123',
                 age: 21,
                 nationality: 'CAMEROON'
             }
@@ -119,20 +119,20 @@ const UsersList = [
     {
         id: 7,
         name: 'Ted',
-        username: 'Ted',
+        username: 'Ted@123',
         age: 27,
         nationality: 'UNITED_KINGDOM',
         friends: [
             {
                 id: 11,
                 name: 'Patricia',
-                username: 'Patricia',
+                username: 'Patricia@123',
                 age: 31,
                 nationality: 'NIGERIA'
             },
             {
                 id: 9,
-                name: 'Jacob',
+                name: 'Jacob@123',
                 username: 'Jacob',
                 age: 26,
                 nationality: 'MEXICO'
@@ -142,21 +142,21 @@ const UsersList = [
     {
         id: 8,
         name: 'Anthony',
-        username: 'Anthony',
+        username: 'Anthony@123',
         age: 36,
         nationality: 'ARGENTINA',
         friends: [
             {
                 id: 3,
                 name: 'Bjorn',
-                username: 'Bjorn',
+                username: 'Bjorn@123',
                 age: 32,
                 nationality: 'NORWAY'
             },
             {
                 id: 11,
                 name: 'Patricia',
-                username: 'Patricia',
+                username: 'Patricia@123',
                 age: 31,
                 nationality: 'NIGERIA'
             }
@@ -165,14 +165,14 @@ const UsersList = [
     {
         id: 9,
         name: 'Jacob',
-        username: 'Jacob',
+        username: 'Jacob@123',
         age: 26,
         nationality: 'MEXICO',
         friends: [
             {
                 id: 1,
                 name: 'Bruce',
-                username: 'Bruce',
+                username: 'Bruce@123',
                 age: 22,
                 nationality: 'CANADA'
             }
@@ -181,14 +181,14 @@ const UsersList = [
     {
         id: 10,
         name: 'Rita',
-        username: 'Rita',
+        username: 'Rita@123',
         age: 21,
         nationality: 'CAMEROON',
         friends: [
             {
                 id: 9,
                 name: 'Jacob',
-                username: 'Jacob',
+                username: 'Jacob@123',
                 age: 26,
                 nationality: 'MEXICO'
             }
@@ -197,7 +197,7 @@ const UsersList = [
     {
         id: 11,
         name: 'Patricia',
-        username: 'Patricia',
+        username: 'Patricia@123',
         age: 31,
         nationality: 'NIGERIA',
         friends: [
@@ -213,21 +213,21 @@ const UsersList = [
     {
         id: 12,
         name: 'Quincy',
-        username: 'Quincy',
+        username: 'Quincy@123',
         age: 39,
         nationality: 'CHINA',
         friends: [
             {
                 id: 13,
                 name: 'Felix',
-                username: 'Felix',
+                username: 'Felix@123',
                 age: 17,
                 nationality: 'ANTIGUA'
             },
             {
                 id: 14,
                 name: 'Cruise',
-                username: 'Cruise',
+                username: 'Cruise@123',
                 age: 28,
                 nationality: 'CANADA'
             }
@@ -236,14 +236,14 @@ const UsersList = [
     {
         id: 13,
         name: 'Felix',
-        username: 'Felix',
+        username: 'Felix@123',
         age: 17,
         nationality: 'ANTIGUA',
         friends: [
             {
                 id: 9,
                 name: 'Jacob',
-                username: 'Jacob',
+                username: 'Jacob@123',
                 age: 26,
                 nationality: 'MEXICO'
             }
@@ -252,14 +252,14 @@ const UsersList = [
     {
         id: 14,
         name: 'Cruise',
-        username: 'Cruise',
+        username: 'Cruise@123',
         age: 28,
         nationality: 'CANADA',
         firends: [
             {
                 id: 1,
                 name: 'Bruce',
-                username: 'Bruce',
+                username: 'Bruce@123',
                 age: 22,
                 nationality: 'CANADA'
             }
@@ -268,28 +268,28 @@ const UsersList = [
     {
         id: 15,
         name: 'Jenny',
-        username: 'Jenny',
+        username: 'Jenny@123',
         age: 23,
         nationality: 'GHANA',
         friends: [
             {
                 id: 9,
                 name: 'Jacob',
-                username: 'Jacob',
+                username: 'Jacob@123',
                 age: 26,
                 nationality: 'MEXICO'
             },
             {
                 id: 10,
                 name: 'Rita',
-                username: 'Rita',
+                username: 'Rita@123',
                 age: 21,
                 nationality: 'CAMEROON'
             },
             {
                 id: 11,
                 name: 'Patricia',
-                username: 'Patricia',
+                username: 'Patricia@123',
                 age: 31,
                 nationality: 'NIGERIA'
             }
