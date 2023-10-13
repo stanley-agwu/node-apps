@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+}
+.data {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 30rem;
+}
+.user {
+  box-sizing: border-box;
+  border: 1px solid grey;
+  border-radius: 0.5rem;
+  width: 20rem;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+.user-title {
+  font-weight: 600;
+}
+
